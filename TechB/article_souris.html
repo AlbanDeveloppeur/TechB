@@ -1,0 +1,226 @@
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TechB - TechMouse</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style_souris.css">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Ubuntu|Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link rel="icon" href="assets/images/photodeprofil.jpg">
+        
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+        <script>
+            src="https://code.jquery.com/jquery-3.5.0.js"
+
+            jQuery(function(){
+                $(function () {
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 200 ) { 
+                            $('#scrollUp').css('right','10px');
+                        } else { 
+                            $('#scrollUp').removeAttr( 'style' );
+                        }
+                    });
+                });
+
+                // Remonter proprement en haut de la page
+                $("#scrollUp a").click(function (e){
+                    // Annulation de la prise de contrôle par le navigateur pour ne pas qu'il remonte
+                    // de façon brutale
+                    e.preventDefault()
+                    $("html, body").animate({scrollTop:0}, 600);
+                })
+            });
+
+                jQuery(document).ready(function(){
+
+                $('#souris_profil').animate({opacity: ".9999999", marginLeft: "270px"}, 1500)
+
+                $('.span1').delay(1700).animate({opacity: ".9999999"}, 1500)
+
+                $('.span2').delay(2200).animate({opacity: ".9999999"}, 1500)
+
+                $('.accroche').delay(3200).animate({opacity: ".9999999"}, 1600)
+                });
+        </script>
+    </head>
+
+    <body>
+
+        <div id="scrollUp">
+            <a href="#top"><img src="assets/images/to_top.png"/></a>
+        </div>
+
+        <!-- Entête et Barre de navigation -->
+        <header>
+            <!-- Entête -->
+            <div class="entete">
+                <div class="container">
+                    <div>
+                        <a href="index.html"><img src="assets/images/logo_techb_w.png" class="logo left" alt="Logo de TechB"></a>
+                    </div>
+    
+                    <div>
+                        <a href="#" class="right"><img src="assets/images/icone_profil.png" class="header_logo" alt="Icone du boutton recherher"></a>
+                    </div>
+    
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+        <!-- Premier aperçu + phrase d'accroche -->
+        <article>
+            <div class="cover_premier container">
+                <h1>
+                    <span class="span1">one click</span>
+                    <span class="span2">one kill</span>
+                </h1>
+                <div class="cover_souris_profil">
+                    <img src="assets/images/souris_profil.png" alt="Souris TechMouse de la marque TechB" id="souris_profil">
+                </div>
+                
+            </div>
+
+            <div class="accroche">
+                <div class="separation_bar"></div>
+                <p>TechMouse est une souris pour droitier comme pour gaucher, légère, de qualité professionnelle, conçu avec des joueurs professionnels. Donc faites pour vous.</p>
+            </div>
+        </article>
+
+        <!-- Article présentation produit -->
+        <article class="presentation">
+            <div class="container">
+                <h2>prête à jouer</h2>
+
+                <div class="separation_bar2"></div>
+
+                <p class="presentation_p">Profitez au maximum de votre temps de jeu avec la souris gaming TechMouse dotée de la technologie LIGHTSPEED, d'un capteur pour le jeu et d'un design classique à 7 boutons.</p>
+            
+                <div class="presentation_descri flex">
+                    <div class="descri1">
+                        <span>7 boutons</span>
+                    </div>
+                        <div class="bar_vertical"></div>
+                    <div class="descri2">
+                        <span>Lightspeed</span>
+                    </div>
+                        <div class="bar_vertical"></div>
+                    <div class="descri3">
+                        <span>Moderne</span>
+                    </div>
+                </div>
+
+                <div class="cover_souris_topandbot">
+                    <img class="bot" src="assets/images/souris_dessous.png" alt="Souris TechB vue de dessous">
+                    <img class="top" src="assets/images/souris_dessus.png" alt="Souris TechB vue de dessus">
+                </div>
+            </div>
+        </article>
+
+        <!-- Description produit -->
+        
+        <article class="descrip_tech container">
+            <div class="bar_and_title flex left">
+                <div class="bar_left_descrip"></div>
+                <h3>caractéristiques<br>techniques</h3>
+            </div>
+
+            <div class="all_descrip_right right">
+                <div class="flex">
+                    <section class="config_requise">
+                        <h4>configuration requise</h4>
+                        <ul>
+                            <li>Windows 10 ou version antérieur</li>
+                            <p>............................................</p>
+                            <li>macOS 10.10 ou version antérieur</li>
+                            <p>............................................</p>
+                            <li>Chrome OS<sup>tm</sup></li>
+                            <p>............................................</p>
+                            <li>Port USB</li>
+                        </ul>
+                    </section>
+                    
+                    <section class="specifi_tech">
+                        <h4>spécifications techniques</h4>
+                        <ul>
+                            <li>Technologie Lightspeed</li>
+                            <p>............................................</p>
+                            <li>7 boutons programmable</li>
+                            <p>............................................</p>
+                            <li>Résolution : 100 - 16 000 PPP</li>
+                        </ul>
+                    </section>
+                </div>
+    
+                <div class="flex">
+                    <section class="carac_physi">
+                        <h4>caractéristiques physique</h4>
+                        <ul>
+                            <li>Hauteur : 132 mm</li>
+                            <p>............................................</p>
+                            <li>Largeur : 75 mm</li>
+                            <p>............................................</p>
+                            <li>Epaisseur : 40 mm</li>
+                            <p>............................................</p>
+                            <li>Poids : 114 g (souris uniquement)</li>
+                            <p>............................................</p>
+                            <li>Longueur du câble : 2,1 m</li>
+                        </ul>
+                    </section>
+    
+                    <div>
+                        <section class="num_refe">
+                            <h4>numéro de référence</h4>
+                            <ul>
+                                <li>914-007539</li>
+                            </ul>
+                        </section>
+    
+                        <section class="info_garantie">
+                            <h4>informations sur la garantie</h4>
+                            <ul>
+                                <li>2 ans de garantie matérielle limitée</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+            
+        </article>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer flex">
+                <div class="contenant_footer">
+                    <p><a href="#">à propos</a></p>
+                    <p><a href="#">confidentialité et sécurité</a></p>
+                    <p><a href="#">développement durable</a></p>
+                </div>
+                <div class="contenant_footer">
+                    <p><a href="#">mon compte</a></p>
+                    <p><a href="#">presse</a></p>
+                    <p><a href="#">contact</a></p>
+                </div>
+                <div class="contenant_footer">
+                    <p><a href="#">garantie</a></p>
+                    <p><a href="#">paiement securise</a></p>
+                    <p><a href="https://www.boulanger.com" target="blank">boulanger.com</a></p>
+                </div>
+                <div class="icons">
+                    <div class="icone">
+                        <a href="#"><img src="assets/images/icone_youtube.png" alt="logo youtube" class="icone_a youtube"></a>
+                        <a href="#"><img src="assets/images/icone_facebook.png" alt="logo facebook" class="icone_a"></a>
+                    </div>
+                    <div class="icone2">
+                        <a href="#"><img src="assets/images/icone_insta.png" alt="logo instagram" class="icone_a insta"></a>
+                        <a href="#"><img src="assets/images/icone_twitter.png" alt="logo twitter" class="icone_a"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

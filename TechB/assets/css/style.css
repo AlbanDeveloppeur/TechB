@@ -1,0 +1,403 @@
+/* CSS Global */
+
+element.style {
+    right: 0;
+}
+
+* {
+    z-index: 1;
+}
+
+p, h1, a, span {
+    font-family: Verdana;
+    font-size: 20px
+}
+
+h1 {
+    font-size: 23px;
+    text-align: center;
+    line-height: 38px;
+}
+
+#scrollUp {
+    position: fixed;
+    bottom : 50px;
+    right: -100px;
+    opacity: 0.8;
+    border: 1px solid #FD5200;
+    padding: 7px 8px 7px 8px;
+    border-radius: 100%;
+    background-color: #FD5200;
+    z-index: 10;
+}
+
+#scrollUp img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Classe utilitaire */
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1250px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Header */
+
+header img {
+    margin-top: 9px;
+}
+
+.entete {
+    background-color: #1D1D1B;
+    height: 60px;
+    width: 100%;
+}
+
+.logo {
+    height: 42px;
+    transition: 0.4s;
+    margin-left: 10px;
+}
+
+.logo:hover {
+    transform: scale(1.05)
+}
+
+.header_logo {
+    width: 30px;
+    background-color: #FD5200;
+    padding: 6px;
+    border: 0;
+    border-radius: 10px;
+    transition: 0.4s;
+    margin-right: 10px;
+}
+
+.header_logo:hover {
+    padding: 4px;
+    background: none;
+    border: 2px solid #FD5200;
+}
+
+/* Barre de navigation */
+
+nav {
+    width: 1050px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 0.5%;
+}
+
+nav a {
+    color: #707070;
+    font-family: 'Open Sans';
+}
+
+nav div {
+    height: 130px;
+    transition: 0.4s;
+}
+
+nav div:hover { 
+    border-radius: 0px 0px 13px 13px;
+    transform: scale(1.1);
+}
+
+nav a:hover {
+    color: #FD5200;
+}
+
+nav img {
+    height: 85px;
+
+}
+
+/* Slide Show */
+
+.slidershow {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 9px;
+}
+
+.navigation{
+    position: relative;
+    left: 47.5%;
+    bottom: 50px;
+    display: flex;
+}
+
+.bar{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+    background: black;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .slides .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .slides .s1 {
+    margin-left: -20%;
+}
+#r3:checked ~ .slides .s1 {
+    margin-left: -40%;
+}
+
+#r1:checked ~ .slides .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .slides .s1 {
+    margin-left: -20%;
+}
+#r3:checked ~ .slides .s1 {
+    margin-left: -40%;
+}
+
+#r1:checked ~ .navigation #dot1 {
+    background: white;
+    border: 2px solid black
+}
+
+#r2:checked ~ .navigation #dot2 {
+    background: white;
+    border: 2px solid black
+}
+
+#r3:checked ~ .navigation #dot3 {
+    background: white;
+    border: 2px solid black
+}
+
+/* Produits TechB du moment */
+
+.produits_du_moment {
+    margin-top: 54px;
+}
+
+article.produits_du_moment h1 img {
+    height: 25px;
+}
+
+article.produits_du_moment div img {
+    height: 120px;
+}
+
+article.produits_du_moment div.flex {
+    justify-content: space-around;
+}
+
+.article_border {
+    margin-top: 40px;
+    border: 1.3px solid black;
+    border-radius: 20px;
+    background-color: rgb(250, 250, 250);
+    width: 330px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.article_border:hover {
+    transform: scale(1.1);
+}
+
+article.produits_du_moment p {
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+}
+
+article.produits_du_moment input {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #FD5200;
+    font-family: Verdana;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.border1 {
+    margin-left: auto;
+    margin-right: 80px;
+}
+
+.border2 {
+    margin-right: 80px;
+}
+
+.border3 {
+    margin-right: auto;
+}
+
+.logo_article_1 {
+    padding: 10px 8.5px 0px 8.5px;
+}
+
+.logo_article_2 {
+    padding: 10px 52.2px 0px 52.2px;
+}
+
+.logo_article_3 {
+    padding: 10px 34px 0px 34px;
+}
+
+/* Actus */
+
+article.actu {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+article.actu div.flex {
+    margin-top: 40px;
+}
+
+article.actu h1 img {
+    height: 25px;
+}
+
+article.actu div.flex div.img_actu img {
+    margin: 0;
+    width: 100%;
+}
+
+.img_actu {
+    position: relative;
+    text-align: center
+}
+
+.text_center {
+    position: absolute;
+    top: 96.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 7px 0px 7px 0px;
+    font-size: 15px;
+    transition: 0.3s;
+    opacity: 80%;
+}
+
+.text_center:hover {
+    color: #FD5200;
+    opacity: 1;
+}
+
+/* Footer */
+
+footer {
+    background-color: #434748;
+
+}
+
+footer a {
+    color: white;
+}
+
+.footer {
+    height: 210px;
+}
+
+.contenant_footer {
+    text-transform: uppercase;
+    width: 200px;
+    line-height: 40px;
+    margin: auto 0 auto 0;
+}
+
+.contenant_footer a {
+    font-size: 12px;
+}
+
+footer a {
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #FD5200;
+}
+
+footer div.flex {
+    justify-content: space-around;
+}
+
+footer div.flex img {
+    width: 30px;
+}
+
+.icons {
+    margin: auto 0 auto 0;
+}
+
+.youtube {
+    margin-right: 50px;
+}
+
+.icone2 {
+    margin-top: 50px;
+}
+
+.insta {
+    margin-right: 50px;
+}
+
+.icone_a {
+    transition: 0.4s;
+}
+
+.icone_a:hover{
+    transform: scale(1.1);
+}

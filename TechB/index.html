@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boulanger - TechB</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="icon" href="assets/images/photodeprofil.jpg">
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+        <script>
+            jQuery(function(){
+                $(function () {
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 200 ) { 
+                            $('#scrollUp').css('right','10px');
+                        } else { 
+                            $('#scrollUp').removeAttr( 'style' );
+                        }
+                    });
+                });
+
+                // Remonter proprement en haut de la page
+                $("#scrollUp a").click(function (e){
+                    // Annulation de la prise de contrôle par le navigateur pour ne pas qu'il remonte
+                    // de façon brutale
+                    e.preventDefault()
+                    $("html, body").animate({scrollTop:0}, 600);
+                })
+            });
+        </script>
+    </head>
+
+    <body>
+
+        <div id="scrollUp">
+            <a href="#top"><img src="assets/images/to_top.png"/></a>
+        </div>
+
+        <!-- Entête et Barre de navigation -->
+        <header>
+            <!-- Entête -->
+            <div class="entete">
+                <div class="container">
+                    <div>
+                        <a href="index.html"><img src="assets/images/logo_techb_w.png" class="logo left" alt="Logo de TechB"></a>
+                    </div>
+    
+                    <div>
+                        <a href="#" class="right"><img src="assets/images/icone_profil.png" class="header_logo" alt="Icone du boutton recherher"></a>
+                    </div>
+    
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <!-- Barre de navigation -->
+            <nav class="flex">
+                <div>
+                    <a href="#">
+                        <img src="assets/images/casque_techb.png" alt="Casque de la marque techB">
+                        <br>
+                        <span>CASQUE</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="assets/images/clavier_techb.png" alt="Clavier de la marque techB">
+                        <br>
+                        <span>CLAVIER</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="article_souris.html">
+                        <img src="assets/images/souris_techb.png" alt="Souris de la marque techB">
+                        <br>
+                        <span>SOURIS</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="assets/images/tapis_techb.png" alt="Tapis de souris de la marque techB">
+                        <br>
+                        <span>TAPIS</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="assets/images/manette_techb.png" alt="Manette de console de la marque techB">
+                        <br>
+                        <span>MANETTE</span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Slideshow -->
+        <div class="slidershow">
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            
+            <div class="slides">
+                <div class="slide s1">
+                    <img src="assets/images/cover_slide1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/cover_slide2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/cover_slide3.png" alt="">
+                </div>
+            </div>
+
+            <div class="navigation">
+                <label for="r1" class="bar" id="dot1"></label>
+                <label for="r2" class="bar" id="dot2"></label>
+                <label for="r3" class="bar" id="dot3"></label>
+            </div>
+        </div>
+
+        <!-- Produits du moment -->
+        <article class="produits_du_moment container">
+            <h1>
+                Les produits <img src="assets/images/logo_techb_bl.png" alt="Logo de la marque TechB">
+                <br> du moments
+            </h1>
+
+            <div class="flex">
+                <div class="article_border border1">
+                    <img src="assets/images/clavier_techb_2.png" class="logo_article_1" alt="clavier TechB">
+                    <p>TechBoard Pro</p>
+                    <input type="button" value="VOIR PLUS">
+                </div>
+                <div class="article_border border2">
+                    <img src="assets/images/souris_techb.png" class="logo_article_2" alt="souris TechB">
+                    <p>TechMouse</p>
+                    <input type="button" value="VOIR PLUS">
+                </div>
+                <div class="article_border border3">
+                    <img src="assets/images/casque_techb.png" class="logo_article_3" alt="casque TechB">
+                    <p>TechSet Wireless</p>
+                    <input type="button" value="VOIR PLUS">
+                </div>
+            </div>
+        </article>
+
+        <!-- Actus -->
+        <article class="actu">
+            <h1>
+                Les actus <img src="assets/images/logo_techb_bl.png" alt="Logo de la marque TechB">
+                <br> du moments
+            </h1>
+
+            <div class="flex">
+                <div class="img_actu">
+                    <img src="assets/images/cover_actus1.jpg" alt="clavier oarange au couleur de TechB">
+                    <div><a href="#" class="text_center">Les nouveaux switch TechB</a></div>
+                </div>
+                <div class="img_actu">
+                    <img src="assets/images/cover_actus2.jpg" alt="Joueur jouant à un jeux vidéo avec le matériel TechB">
+                    <div><a href="#" class="text_center">TechB à la PGW</a></div>
+                </div>
+                <div class="img_actu">
+                    <img src="assets/images/cover_actus3.jpg" alt="Manette de jeux TechB">
+                    <div><a href="#" class="text_center">Découvrez TechAssist</a></div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer flex">
+                <div class="contenant_footer">
+                    <p><a href="#">à propos</a></p>
+                    <p><a href="#">confidentialité et sécurité</a></p>
+                    <p><a href="#">développement durable</a></p>
+                </div>
+                <div class="contenant_footer">
+                    <p><a href="#">mon compte</a></p>
+                    <p><a href="#">presse</a></p>
+                    <p><a href="#">contact</a></p>
+                </div>
+                <div class="contenant_footer">
+                    <p><a href="#">garantie</a></p>
+                    <p><a href="#">paiement securise</a></p>
+                    <p><a href="https://www.boulanger.com" target="blank">boulanger.com</a></p>
+                </div>
+                <div class="icons">
+                    <div class="icone">
+                        <a href="#"><img src="assets/images/icone_youtube.png" alt="logo youtube" class="icone_a youtube"></a>
+                        <a href="#"><img src="assets/images/icone_facebook.png" alt="logo facebook" class="icone_a"></a>
+                    </div>
+                    <div class="icone2">
+                        <a href="#"><img src="assets/images/icone_insta.png" alt="logo instagram" class="icone_a insta"></a>
+                        <a href="#"><img src="assets/images/icone_twitter.png" alt="logo twitter" class="icone_a"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,336 @@
+/* CSS Global */
+
+p, h1, h2, h3, h4, a, span, li {
+    font-family: Verdana;
+}
+
+#scrollUP {
+    position: fixed;
+    bottom : 50px;
+    right: -100px;
+    opacity: 0.8;
+    border: 1px solid #FD5200;
+    padding: 8px 8px 9px 8px;
+    border-radius: 100%;
+    background-color: #FD5200;
+}
+
+#scrollUP img {
+    width: 32px;
+}
+
+/* Classe utilitaire */
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1250px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Header */
+
+.entete img {
+    margin-top: 9px;
+}
+
+.entete {
+    background-color: #1D1D1B;
+    height: 60px;
+    width: 100%;
+}
+
+.logo {
+    height: 42px;
+    transition: 0.4s;
+    margin-left: 10px;
+}
+
+.logo:hover {
+    transform: scale(1.05)
+}
+
+.header_logo {
+    width: 30px;
+    background-color: #FD5200;
+    padding: 6px;
+    border: 0;
+    border-radius: 10px;
+    transition: 0.4s;
+    margin-right: 10px;
+}
+
+.header_logo:hover {
+    padding: 4px;
+    background: none;
+    border: 2px solid #FD5200;
+}
+
+/* Premier aperçu + phrase d'accroche */
+
+.cover_premier {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+    height: 580px;
+}
+
+.cover_premier h1{
+    font-size: 140px;
+    padding-left: 17%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.cover_premier h1 span {
+    display: flex;
+    text-transform: uppercase;
+    width: 1119px;
+    opacity: 1e-7;
+}
+
+.cover_souris_profil {
+    width: 800px;
+}
+
+#souris_profil {
+    margin-top: 40px;
+    height: 270px;
+    opacity: 1e-7;
+}
+
+.separation_bar {
+    width: 750px;
+    border: 2px solid #FD5200;
+}
+
+.accroche {
+    width: 755px;
+    margin : 0 auto 0 auto;
+    opacity: 1e-7;
+}
+
+.accroche p {
+    width: 700px;
+    margin: 10px 0px 50px 20px;
+    font-size: 28px;
+    text-align: justify;
+}
+
+/* Article présentation produit */
+
+article.presentation {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    height: 1000px;
+}
+
+article.presentation h2 {
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+article.presentation div.separation_bar2 {
+    width: 300px;
+    border: 2px solid #FD5200;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin: 50px auto 50px auto;
+}
+
+p.presentation_p {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 60px;
+    width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+.presentation_descri {
+    width: 700px;
+    height: 104px;
+    margin: 40px auto 40px auto;
+}
+
+.descri1,
+.descri2,
+.descri3 {
+    font-size: 20px;
+    margin: auto 0 auto 0;
+}
+
+.descri1 {
+    margin-right: 100px;
+}
+
+.descri2 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.descri3 {
+    margin-left: 100px;
+}
+
+.bar_vertical {
+    height: 100px;
+    width: 0px;
+    border: 1px solid #FD5200;
+}
+
+article.presentation img {
+    position: absolute;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+article.presentation img.top {
+    right: 43%;
+    width: 280px;
+}
+
+article.presentation img.bot {
+    right: 43%;
+    width: 240px;
+}
+
+article.presentation img.top:hover {
+    opacity:0;
+}
+
+/* Description produit */
+
+.descrip_tech {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.bar_and_title {
+    text-transform: uppercase;
+}
+
+div.bar_left_descrip {
+    border: 2px solid #FD5200;
+    width: 50px;
+    height: 0;
+    margin: 8px 30px 0 0;
+}
+
+.config_requise h4,
+.specifi_tech h4,
+.carac_physi h4,
+.num_refe h4,
+.info_garantie h4 {
+    text-transform: uppercase;
+}
+
+.config_requise ul,
+.specifi_tech ul,
+.carac_physi ul,
+.num_refe ul,
+.info_garantie ul {
+    margin: 25px 50px 50px 0;
+}
+
+.config_requise li,
+.specifi_tech li,
+.carac_physi li,
+.num_refe li,
+.info_garantie li {
+    font-size: 18px;
+    color: #707070;
+}
+
+.config_requise p,
+.specifi_tech p,
+.carac_physi p {
+    color: #707070;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #434748;
+
+}
+
+footer a {
+    color: white;
+}
+
+.footer {
+    height: 210px;
+}
+
+.contenant_footer {
+    text-transform: uppercase;
+    width: 200px;
+    line-height: 40px;
+    margin: auto 0 auto 0;
+}
+
+.contenant_footer a {
+    font-size: 12px;
+}
+
+footer a {
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #FD5200;
+}
+
+footer div.flex {
+    justify-content: space-around;
+}
+
+footer div.flex img {
+    width: 30px;
+}
+
+.icons {
+    margin: auto 0 auto 0;
+}
+
+.youtube {
+    margin-right: 50px;
+}
+
+.icone2 {
+    margin-top: 50px;
+}
+
+.insta {
+    margin-right: 50px;
+}
+
+.icone_a {
+    transition: 0.4s;
+}
+
+.icone_a:hover{
+    transform: scale(1.1);
+}
